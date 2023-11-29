@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<style>
+    body{
+        background-image: url(img.png);
+        border: 2px solid red;  
+        border-radius:5px;  
+        background-size: cover;
+         padding: 10px; 
+        align-content: center;   
+        }
+</style>
+
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form align="center" action="Register.html" method="POST"></form>
+            
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="collegename">CollegeName:</label>
+                <input type="text" id="collegename" name="collegename" placeholder="collegename" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="B.E">B.E</option>
+                    <option value="B.tech">B.tech</option>
+                    <option value="M.tech">M.tech</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Branch">Branch:</label>
+                <select id="branch" name="branch" required>
+                    <option value="CSE">CSE</option>
+                    <option value="IT">IT</option>
+                    <option value="AIDS">AIDS</option>
+                    <option value="MECH">MECH</option>
+                    <option value="Biotech">Biotech</option>
+                    <option value="AIML">AIML</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Add more additional details fields as needed -->
+
+            <div class="container">
+                <button onclick="goToAnotherPage()">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+    
